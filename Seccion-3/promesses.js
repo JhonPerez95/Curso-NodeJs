@@ -43,7 +43,7 @@ let getSalario = empleado => {
       return salario.id === empleado.id;
     });
     if (!salarioDB) {
-      reject(`No se encontro salario para el usuario ${empleado.nombre}`);
+      reject(`No se encontro salario para el empleado ${empleado.nombre}`);
     } else {
       resolve({
         nombre: empleado.nombre,
@@ -51,10 +51,10 @@ let getSalario = empleado => {
         id: empleado.id
       });
     }
-  });
+  }); 
 };
 
-getEmpleado(2)
+getEmpleado(3)
   .then(empleado => {
     console.log(`El empleado es ${empleado.nombre}`);
     return getSalario(empleado);

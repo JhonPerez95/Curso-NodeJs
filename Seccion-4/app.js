@@ -1,3 +1,5 @@
+// Require
+
 const multiplicar = require("./multiplicar/multiplicar");
 const { argv } = require("./config/yargs");
 
@@ -10,7 +12,7 @@ switch (commando) {
     multiplicar
       .crearArchivo(base, limite)
       .then(archivo => {
-        console.log(`El archivo de la tabla: ${archivo} fue creado`);
+        console.log(archivo);
       })
       .catch(err => {
         console.log(err);

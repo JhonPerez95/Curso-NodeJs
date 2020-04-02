@@ -40,7 +40,7 @@ let getSalario = (empleado, callback) => {
     return salario.id === empleado.id;
   });
   if (!salarioDB) {
-    callback(`No se encontro salario para el usuario ${empleado.nombre}`);
+    callback(`No se encontro salario para el empleado ${empleado.nombre}`);
   } else {
     callback(null, {
       nombre: empleado.nombre,

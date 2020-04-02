@@ -1,1 +1,6 @@
-[{"descripcion":"correr","completado":false},{"descripcion":"Comer","completado":false},{"descripcion":"cantar","completado":"fal"},{"descripcion":"jugar","completado":"true"}]
+[
+  { "descripcion": "correr", "completado": false },
+  { "descripcion": "Comer", "completado": false },
+  { "descripcion": "cantar", "completado": "fal" },
+  { "descripcion": "jugar", "completado": "true" }
+]

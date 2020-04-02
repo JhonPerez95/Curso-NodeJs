@@ -55,10 +55,11 @@ let getSalario = async empleado => {
 let getInformacion = async id => {
   let empleado = await getEmpleado(id);
   let res = await getSalario(empleado);
+  // return console.log(    `El salario del empleado ${res.nombre} es de ${res.salario}`);
   return `El salario del empleado ${res.nombre} es de ${res.salario}`;
 };
 
-getInformacion(4)
+getInformacion(6) // Preguntar Dgl
   .then(info => {
     console.log(info);
   })
